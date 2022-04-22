@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rose's Calculator</title>
+    <script type="text/javascript" src="myJS.js"></script>
+    <link rel="stylesheet" href="myCSS.css">
+</head>
+<body>
+    <h1>Welcome to Rose's calculator</h1>
+    <div class="container">
+        <div>
+            <input type="text" id="inputBar" placeholder="0" >
+        </div>
+        <div class="row">
+            <input type="button" id="iAC" value="AC" onclick="clearNum()">
+            <input type="button" id="iD" value="." onclick="showButtonNum('.')">
+            <input type="button" id="iDi"   value="÷" onclick="showButtonNum('/')">
+            <input type="button" id="iP" value="+" onclick="showButtonNum('+')">
+        </div>
+
+        <div class="row">
+            <input type="button" value="1" onclick="showButtonNum('1')">
+            <input type="button" value="2" onclick="showButtonNum('2')">
+            <input type="button" value="3" onclick="showButtonNum('3')">
+            <input type="button" id="iT" value="×" onclick="showButtonNum('*')">
+        </div>
+
+        <div class="row">
+            <input type="button" value="4" onclick="showButtonNum('4')">
+            <input type="button" value="5" onclick="showButtonNum('5')">
+            <input type="button" value="6" onclick="showButtonNum('6')">
+            <input type="button" id="iM" value="−" onclick="showButtonNum('-')">
+        </div>
+
+        <div class="row">
+            <input type="button" value="7" onclick="showButtonNum('7')">
+            <input type="button" value="8" onclick="showButtonNum('8')">
+            <input type="button" value="9" onclick="showButtonNum('9')">
+            <input type="button" id="iE" value="=" onclick="calculation()">
+        </div>
+    </div>
+
+</body>
+</html>
